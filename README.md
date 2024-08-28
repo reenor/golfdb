@@ -1,6 +1,13 @@
 # GolfDB: A Video Database for Golf Swing Sequencing
 
-The code in this repository is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
+```Shell
+# Initialize shell variables
+PATH_TO_VENV=~/venvs/golfdb
+```
+```Shell
+# Activate the virtual environment
+conda activate $PATH_TO_VENV
+```
 
 ## Introduction
 GolfDB is a high-quality video dataset created for general recognition applications 
@@ -11,20 +18,6 @@ This repo contains a simple PyTorch implemention of the SwingNet baseline model 
 The model was trained on split 1 **without any data augmentation** and achieved an average PCE of 71.5% (PCE
 of 76.1% reported in the paper is credited to data augmentation including horizontal flipping and affine 
 transformations). 
-
-If you use this repo please cite the GolfDB paper:
-```
-@InProceedings{McNally_2019_CVPR_Workshops,
-author = {McNally, William and Vats, Kanav and Pinto, Tyler and Dulhanty, Chris and McPhee, John and Wong, Alexander},
-title = {GolfDB: A Video Database for Golf Swing Sequencing},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-month = {June},
-year = {2019}
-}
-```
-
-## Dependencies
-* [PyTorch](https://pytorch.org/)
 
 ## Getting Started
 Run [generate_splits.py](./data/generate_splits.py) to convert the .mat dataset file to a dataframe and 
