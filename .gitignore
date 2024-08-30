@@ -2,3 +2,5 @@ idea/
 data/videos_160
 *.pkl
 *.tar
+.spyproject/
+__pycache__/
