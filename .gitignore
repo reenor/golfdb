@@ -4,3 +4,4 @@ data/videos_160
 *.tar
 .spyproject/
 __pycache__/
+.idea/
